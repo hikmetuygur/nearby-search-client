@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import {GoogleMap, Marker, useJsApiLoader} from '@react-google-maps/api';
 import './PlaceMap.css';
+import Place from './types';
 
 const mapContainerStyle = {
     height: '500px',
@@ -12,9 +13,9 @@ const PlaceMap = () => {
     const [latitude, setLatitude] = useState('');
     const [longitude, setLongitude] = useState('');
     const [radius, setRadius] = useState('');
-    const [places, setPlaces] = useState([]);
+    const [places, setPlaces] = useState<Place[]>([]);
     const [mapCenter, setMapCenter] = useState({lat: 41.008046, lng: 28.974347});
-    const [selectedPlace, setSelectedPlace] = useState(null);
+    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
 
     const handleSearch = async () => {
         try {
