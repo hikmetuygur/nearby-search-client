@@ -32,8 +32,8 @@ const PlaceMap = () => {
     };
 
     const {isLoaded} = useJsApiLoader({
-        id: process.env.REACT_APP_API_KEY_ID,
-        googleMapsApiKey: process.env.REACT_APP_API_KEY,
+        id: process.env.REACT_APP_API_KEY_ID!,
+        googleMapsApiKey: process.env.REACT_APP_API_KEY!,
     });
 
     return (
