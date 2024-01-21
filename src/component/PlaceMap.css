@@ -1,0 +1,55 @@
+.PlaceMap {
+  text-align: center;
+}
+.PlaceMap h2 {
+  color: #3498db;
+}
+.PlaceMap div {
+  margin-top: 20px;
+}
+.PlaceMap div label {
+  display: block;
+  margin-bottom: 10px;
+}
+.PlaceMap div label input {
+  width: 50%;
+  padding: 5px;
+  margin: 5px 10px;
+}
+.PlaceMap div button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.PlaceMap div button:hover {
+  background-color: #217dbb;
+}
+.PlaceMap div button:active {
+  background-color: #196090;
+}
+.PlaceMap .map-container {
+  height: 500px;
+  width: 90%;
+  margin-top: 20px;
+  padding-left: 6rem;
+}
+.PlaceMap .nearby-places {
+  margin-top: 20px;
+}
+.PlaceMap .nearby-places h2 {
+  color: #3498db;
+}
+.PlaceMap .nearby-places ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.PlaceMap .nearby-places ul li {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=PlaceMap.css.map */
